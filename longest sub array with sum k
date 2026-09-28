@@ -1,0 +1,14 @@
+arr=[10,5,2,7,1,9]
+k=15
+max_len=0
+cum_sum=0
+cum_sum_map={}
+for i in range(len(arr)):
+    cum_sum+=arr[i]
+    if cum_sum==k:
+        max_len=i+1
+    if cum_sum-k in cum_sum_map:
+        max_len=(max_len,i-cum_sum_map[cum_sum-k])
+    if cum_sum not in cum_sum_map:
+        cum_sum_map[cum_sum]=i
+print(max_len)
