@@ -1,0 +1,10 @@
+arr =[2,3,4,5,67,1,23,1,2,3,4]
+j=1
+arr.sort()
+for i in range (1,len(arr)):
+    if arr[i]!=arr[j-1]:
+        arr[j]=arr[i]
+        j+=1
+print(arr)
+print(j)
+# ye bata rha hai ki kitne element unique hai  aur .sort ko ham log array ko sort karne ke leye use kar rhe hai sorted array me use nhi karna hai

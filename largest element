@@ -1,0 +1,6 @@
+arr=[2,35,7,9,56,6,6]
+largest=arr[0]
+for i in range (1,len(arr)):
+    if largest<arr[i]:
+        largest=arr[i]
+print(largest)

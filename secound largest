@@ -1,0 +1,14 @@
+arr=[2,35,7,9,56,6,6]
+largest =arr[0]
+secound = None
+for x in arr [1:]:
+    if x > largest:
+        secound = largest
+        largest = x
+    elif x<largest:
+        if secound is None or x>largest:
+            secound=x
+if secound is None :
+    print(" not secound largest element" )
+else :
+    print( " secound largest element:",  secound)

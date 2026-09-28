@@ -1,0 +1,10 @@
+arr = [1, 2, 3, 4, 5, 6, 7]
+
+k = int(input("Enter k: "))
+
+k = k % len(arr)
+
+arr = arr[-k:] + arr[:-k]  # this  is for the right rotation
+arr=arr[k:]+arr[:k]# this for the left rotation
+
+print(arr)
