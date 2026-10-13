@@ -1,0 +1,12 @@
+
+arr = [1,2,3,4,1,1,1,1,2,2,3,4,4,5]
+
+freq = {}
+
+for x in arr:
+    if x in freq:
+        freq[x] += 1
+    else:
+        freq[x] = 1
+
+print(freq)
