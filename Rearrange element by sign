@@ -1,0 +1,20 @@
+
+arr = [3, 1, -2, -5, 2, -4]
+
+positive = []
+negative = []
+
+for i in arr:
+    if i > 0:
+        positive.append(i)
+    else:
+        negative.append(i)
+
+result = [0] * len(arr)
+
+for i in range(len(positive)):
+    result[2 * i] = positive[i]
+    result[2 * i + 1] = negative[i]
+
+print("Original Array:", arr)
+print("Rearranged Array:", result)
